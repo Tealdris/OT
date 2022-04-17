@@ -166,13 +166,13 @@
 		</dependency>
     </dependencies>
      <build>
-	     <finalName>ot-docker-jenkins-sample</finalName>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.2.11.v20150529</version>
                 <configuration>
+                    <finalName>ot-docker-jenkins-sample</finalName>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
                         <contextPath>/</contextPath>

@@ -1,13 +1,11 @@
-#FROM tomcat
-FROM tomcat:8.0-alpine
-#FROM openjdk:11
+FROM tomcat
 FROM memcached
 FROM rabbitmq
 
-FROM mysql:latest
-ENV MYSQL_ALLOW_EMPTY_PASSWORD=1
-ENV MYSQL_DATABASE db
-VOLUME mysql:/var/lib/mysql
+#FROM mysql:latest
+#ENV MYSQL_ALLOW_EMPTY_PASSWORD=1
+#ENV MYSQL_DATABASE db
+#VOLUME mysql:/var/lib/mysql
 #EXPOSE 3306
 
 

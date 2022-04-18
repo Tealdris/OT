@@ -4,11 +4,11 @@ FROM tomcat:8.0-alpine
 FROM memcached
 FROM rabbitmq
 
-FROM mysql
+FROM mysql:latest
 ENV MYSQL_ALLOW_EMPTY_PASSWORD=1
 ENV MYSQL_DATABASE db
 VOLUME mysql:/var/lib/mysql
-EXPOSE 3306
+#EXPOSE 3306
 
 
 ADD target/vprofile-v2.war /usr/local/tomcat/webapps/

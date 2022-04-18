@@ -8,4 +8,4 @@ ADD target/vprofile-v2.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 EXPOSE 8009
-CMD ["catalina.sh", "run"]
+#CMD ["catalina.sh", "run"]
